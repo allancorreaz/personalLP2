@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[SEU NOME] | Personal Trainer</title>
+<meta name="description" content="Treinamento individualizado, online ou presencial. Agende uma conversa e descubra o acompanhamento ideal para o seu momento.">
+<meta name="theme-color" content="#FF5A1F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@500;600;700;800&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+
+<!--
+=====================================================================
+ COMO PERSONALIZAR (3 passos)
+ 1) CORES ........ edite as variáveis em :root logo abaixo.
+ 2) WHATSAPP ..... edite CONFIG no bloco de JavaScript do final do
+                   arquivo (na versão em pastas: js/main.js).
+ 3) FOTOS ........ em cada bloco com class="photo", adicione
+                   style="--img:url(img/arquivo.webp)" e APAGUE o
+                   atributo data-label (é só o texto do espaço vazio).
+                   Textos entre [COLCHETES] são para você substituir.
+=====================================================================
+-->
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ícones (sprite) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="M6 7v10M3 9.5v5M18 7v10M21 9.5v5M6 12h12"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.46 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.04 3 5.5l7 7Z"/><path d="M3.2 12h6.3l.5-1 2 4.5 2-7 1.5 3.5h5.3"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6C9.5 14.5 12 13 13 12"/></symbol>
+<symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></symbol>
+<symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h8M18 6h2M4 12h2M12 12h8M4 18h10M20 18h0"/><circle cx="15" cy="6" r="2.2"/><circle cx="9" cy="12" r="2.2"/><circle cx="17" cy="18" r="2.2"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m10 8.5 5.5 3.5-5.5 3.5z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+<symbol id="i-clip" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+<symbol id="i-usercheck" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+<symbol id="i-msg" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+<symbol id="i-upright" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-.8.7c-.9-.4-1.6-1.1-2-2l.7-.8-1-2z"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 8a4 4 0 0 0 6 0zM19 7l-3 8a4 4 0 0 0 6 0z"/></symbol>
+<symbol id="i-pie" viewBox="0 0 24 24"><path d="M21.2 15.9A10 10 0 1 1 8 2.8"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+<symbol id="i-monitor" viewBox="0 0 24 24"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M7 19h5"/><rect x="13" y="9" width="8" height="12" rx="1.5"/></symbol>
+</defs>
+</svg>
+
+<!-- ===== 1. HERO ===== -->
+<div class="hero-wrap">
+<header class="hero" id="inicio">
+  <div class="portrait photo" data-label="[FOTO PRINCIPAL · recorte do profissional, fundo escuro]"></div>
+  <p class="eyebrow">Treinamento individualizado <b>para [SEU PÚBLICO]</b></p>
+  <h1>Mais força <em>para viver bem.</em></h1>
+  <p class="sub">Treino sob medida para você ganhar energia, preservar a saúde e manter o ritmo da sua rotina, sem complicação.</p>
+
+  <div class="hcards">
+    <a class="hcard" href="#planos">
+      <svg class="i go"><use href="#i-upright"/></svg>
+      <div class="photo" data-label="[FOTO]"></div>
+      <div class="txt">
+        <p class="k">Onde você estiver. <b>No seu ritmo.</b></p>
+        <h3>Consultoria <em>online</em></h3>
+        <p>Plano individual no aplicativo, com orientação e ajustes pelo WhatsApp.</p>
+      </div>
+    </a>
+    <a class="hcard" href="#planos">
+      <div class="photo" data-label="[FOTO]"></div>
+      <div class="txt">
+        <p class="k">Atenção <b>a cada detalhe.</b></p>
+        <h3>Personal <em>presencial</em></h3>
+        <p>Acompanhamento de perto, com correção de execução e progressão segura.</p>
+      </div>
+      <span class="pill line"><svg class="i"><use href="#i-pin"/></svg>[SUA CIDADE – UF]</span>
+    </a>
+    <a class="hcard" href="#avaliacao">
+      <div class="photo" data-label="[FOTO]"></div>
+      <div class="txt">
+        <p class="k">Números que <b>orientam o treino.</b></p>
+        <h3>Avaliação <em>física</em></h3>
+        <p>Entenda sua composição corporal e acompanhe suas mudanças com clareza.</p>
+      </div>
+      <span class="pill line"><svg class="i"><use href="#i-pin"/></svg>[SUA CIDADE – UF]</span>
+    </a>
+  </div>
+</header>
+</div>
+
+<!-- ===== 2. FAIXAS ===== -->
+<div class="ribbons" aria-hidden="true">
+  <div class="band b2"><div class="track" data-text="[SEU SLOGAN] • [NOME DA SUA COMUNIDADE]"></div></div>
+  <div class="band b1"><div class="track" data-text="FORÇA • SAÚDE • AUTONOMIA • LONGEVIDADE"></div></div>
+</div>
+
+<!-- ===== 3. A VIDA QUE IMPORTA ===== -->
+<section class="sec center" style="padding-top:20px">
+  <div class="in" style="max-width:760px">
+    <p class="eyebrow">Treinar é <b>cuidar do futuro</b></p>
+    <h2 class="h2">Força para seguir <em>vivendo do seu jeito.</em></h2>
+    <p class="lead">Ter energia para o trabalho, para a família, para viajar e para fazer o que você gosta. Treinar força é investir na autonomia que você quer manter por muitos anos.</p>
+    <ul class="pillars">
+      <li><svg class="i"><use href="#i-dumbbell"/></svg>Mais força</li>
+      <li><svg class="i"><use href="#i-heart"/></svg>Mais saúde</li>
+      <li><svg class="i"><use href="#i-bolt"/></svg>Mais autonomia</li>
+      <li><svg class="i"><use href="#i-leaf"/></svg>Mais longevidade</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 4. PASSOS ===== -->
+<section class="sec dark center">
+  <div class="in" style="max-width:1040px">
+    <p class="eyebrow">Treino de verdade <b>começa pela sua rotina</b></p>
+    <h2 class="h2">Um treino que <em>faz sentido</em> para você.</h2>
+    <p class="lead">Nada de ficha pronta. Primeiro eu entendo sua rotina, seus objetivos e o que é possível manter ao longo do tempo.</p>
+    <ol class="steps">
+      <li><span class="dot"><svg class="i"><use href="#i-scan"/></svg></span><h3>Seu momento</h3><p>Conversamos sobre sua rotina, seus objetivos e sua experiência com o treino.</p></li>
+      <li><span class="dot"><svg class="i"><use href="#i-sliders"/></svg></span><h3>Um plano possível</h3><p>Sua rotina vira um treino individual, ajustado ao seu corpo e ao tempo disponível.</p></li>
+      <li><span class="dot"><svg class="i"><use href="#i-play"/></svg></span><h3>Começo com clareza</h3><p>Você recebe o treino organizado no aplicativo, com o necessário para começar com segurança.</p></li>
+      <li><span class="dot"><svg class="i"><use href="#i-chat"/></svg></span><h3>Você não treina sozinho</h3><p>Dúvidas, orientações e ajustes pelo WhatsApp para seguir com mais confiança.</p></li>
+      <li><span class="dot"><svg class="i"><use href="#i-trend"/></svg></span><h3>Evolução que acompanha</h3><p>O plano evolui junto com seus resultados e com as mudanças da sua rotina.</p></li>
+    </ol>
+    <div class="cta-row"><a class="btn" data-wa href="#">Quero um treino que faça sentido <svg class="i"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ===== 5. CUIDADO EM CADA DECISÃO ===== -->
+<section class="sec center">
+  <div class="in" style="max-width:720px">
+    <p class="eyebrow">Cuidado <b>em cada decisão</b></p>
+    <h2 class="h2">Segurança, acompanhamento e <em>constância</em> em cada etapa.</h2>
+  </div>
+  <ol class="rows">
+    <li><span class="n">01</span><div><h3>Você é o ponto de partida</h3><p>Antes de prescrever exercícios, entendo sua história, sua rotina e o que importa para você.</p></div><span class="ic"><svg class="i"><use href="#i-clip"/></svg></span></li>
+    <li><span class="n">02</span><div><h3>Treino na sua medida</h3><p>Exercícios, cargas e progressões respeitam o seu corpo de hoje.</p></div><span class="ic"><svg class="i"><use href="#i-dumbbell"/></svg></span></li>
+    <li><span class="n">03</span><div><h3>Evolução que dá para ver</h3><p>A avaliação física mostra o ponto de partida e mudanças que nem sempre aparecem no espelho.</p></div><span class="ic"><svg class="i"><use href="#i-scan"/></svg></span></li>
+    <li><span class="n">04</span><div><h3>Clareza para treinar onde estiver</h3><p>Seu planejamento fica organizado no aplicativo, fácil de abrir e seguir.</p></div><span class="ic"><svg class="i"><use href="#i-phone"/></svg></span></li>
+    <li><span class="n">05</span><div><h3>Dúvidas não viram insegurança</h3><p>Contato direto pelo WhatsApp para você receber orientação quando precisar.</p></div><span class="ic"><svg class="i"><use href="#i-usercheck"/></svg></span></li>
+    <li><span class="n">06</span><div><h3>O plano muda com você</h3><p>A cada ciclo, o planejamento é revisado conforme sua evolução e sua vida real.</p></div><span class="ic"><svg class="i"><use href="#i-refresh"/></svg></span></li>
+    <li><span class="n">07</span><div><h3>Pertencer ajuda a continuar</h3><p>Na [SUA COMUNIDADE], alunos encontram conteúdo, direção e incentivo para manter a constância.</p></div><span class="ic"><svg class="i"><use href="#i-msg"/></svg></span></li>
+  </ol>
+  <div class="cta-row"><a class="btn ink" data-wa href="#">Quero um treino que faça sentido <svg class="i"><use href="#i-arrow"/></svg></a></div>
+</section>
+
+<!-- ===== 6. QUEM VAI TE ACOMPANHAR ===== -->
+<section class="sec dark center">
+  <div class="in" style="max-width:700px">
+    <p class="eyebrow"><b>Quem vai te acompanhar</b></p>
+    <h2 class="h2" style="color:#fff">Treino pessoas para que sigam <em>fazendo o que amam.</em></h2>
+    <div class="trio">
+      <div class="photo side" data-label="[FOTO 2]"></div>
+      <div class="photo mid" data-label="[FOTO 1 · retrato]"></div>
+      <div class="photo side" data-label="[FOTO 3]"></div>
+    </div>
+    <p class="who">Sou [SEU NOME], Personal Trainer (CREF [000000-G/UF]).</p>
+    <ul class="about-list">
+      <li><span class="ic"><svg class="i"><use href="#i-heart"/></svg></span><span>Treinar força vai muito além de desempenho ou estética. É ter um corpo preparado para acompanhar <b>seus planos, sua família e seu trabalho.</b></span></li>
+      <li><span class="ic"><svg class="i"><use href="#i-clip"/></svg></span><span>Por isso, meu trabalho começa entendendo sua rotina, seu histórico e o que você quer preservar para o futuro.</span></li>
+      <li><span class="ic"><svg class="i"><use href="#i-sliders"/></svg></span><span>A partir daí, construo um treino que faça sentido para a sua vida.</span></li>
+    </ul>
+    <p class="script">[Seu slogan aqui.]</p>
+    <p class="loc"><svg class="i"><use href="#i-pin"/></svg>Online ou presencialmente em [SUA CIDADE].</p>
+  </div>
+</section>
+
+<!-- ===== 7. PLANOS ===== -->
+<section class="sec center" id="planos">
+  <div class="in" style="max-width:720px">
+    <p class="eyebrow">Escolha <b>como quer ser acompanhado</b></p>
+    <h2 class="h2">Dois formatos, <em>um mesmo cuidado</em> com você.</h2>
+    <p class="lead">Online ou presencialmente em [SUA CIDADE], escolha o nível de acompanhamento que faz sentido para você hoje.</p>
+  </div>
+  <div class="plans">
+    <article class="plan">
+      <span class="num">01</span>
+      <div class="top"><span class="bubble"><svg class="i"><use href="#i-monitor"/></svg></span></div>
+      <p class="k">Liberdade sem estar sozinho</p>
+      <h3>Consultoria online</h3>
+      <p class="d">Para quem quer encaixar o treino na própria rotina, com orientação e acompanhamento.</p>
+      <p class="inc">Incluso:</p>
+      <ul>
+        <li><svg class="i"><use href="#i-check"/></svg>Treino individualizado para a sua rotina</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Treino organizado no aplicativo</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Suporte e acompanhamento pelo WhatsApp</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Ajustes conforme sua evolução</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Acesso à [SUA COMUNIDADE]</li>
+      </ul>
+      <a class="btn block" data-wa data-msg="Olá! Quero começar com a consultoria online." href="#"><svg class="i"><use href="#i-wa"/></svg>Quero começar online</a>
+    </article>
+    <article class="plan">
+      <span class="num">02</span>
+      <div class="top"><span class="bubble"><svg class="i"><use href="#i-dumbbell"/></svg></span><span class="pill solid"><svg class="i"><use href="#i-pin"/></svg>[SUA CIDADE – UF]</span></div>
+      <p class="k">Acompanhamento semanal</p>
+      <h3>Personal presencial</h3>
+      <p class="d">Para quem quer acompanhamento de perto, com técnica, segurança e constância.</p>
+      <p class="inc">Incluso:</p>
+      <ul>
+        <li><svg class="i"><use href="#i-check"/></svg>Treino 100% individualizado</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Avaliação física</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Acompanhamento e correção durante o treino</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Encontro presencial semanal</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Evolução constante</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Horário fixo reservado</li>
+      </ul>
+      <a class="btn block" data-wa data-msg="Olá! Quero treinar com o personal presencial." href="#"><svg class="i"><use href="#i-wa"/></svg>Quero treinar com confiança</a>
+    </article>
+  </div>
+</section>
+
+<!-- ===== 8. AVALIAÇÃO FÍSICA ===== -->
+<section class="sec dark center" id="avaliacao">
+  <div class="in" style="max-width:760px">
+    <p class="eyebrow">Conhecer seu corpo <b>também é cuidado</b></p>
+    <h2 class="h2">Entendendo seu ponto de partida, o caminho <em>fica mais claro.</em></h2>
+    <p class="lead">A avaliação transforma números em informação para definir objetivos possíveis e acompanhar sua evolução.</p>
+  </div>
+  <div class="eval">
+    <div class="row"><span>Avaliação física</span><span class="pill solid"><svg class="i"><use href="#i-pin"/></svg>[SUA CIDADE – UF]</span></div>
+    <small>Atendimento presencial em [SUA CIDADE]</small>
+    <h3>Mais clareza para o seu treino.</h3>
+    <p class="sub">Conheça seu ponto de partida e acompanhe sua evolução com segurança.</p>
+    <ul>
+      <li><span class="ic"><svg class="i"><use href="#i-scale"/></svg></span><div><b>Avaliação por bioimpedância</b><span>Entenda sua composição corporal.</span></div></li>
+      <li><span class="ic"><svg class="i"><use href="#i-pie"/></svg></span><div><b>Composição corporal</b><span>Veja como seu corpo está hoje.</span></div></li>
+      <li><span class="ic"><svg class="i"><use href="#i-trend"/></svg></span><div><b>Acompanhamento da evolução</b><span>Compare seus resultados ao longo do tempo.</span></div></li>
+      <li><span class="ic"><svg class="i"><use href="#i-target"/></svg></span><div><b>Informações para os próximos passos</b><span>Dados que orientam um treino mais seguro e eficiente.</span></div></li>
+    </ul>
+    <a class="btn block" data-wa data-msg="Olá! Quero fazer minha avaliação física." href="#">Quero fazer minha avaliação <svg class="i"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+<!-- ===== 9. DEPOIMENTOS (substitua por depoimentos REAIS) ===== -->
+<section class="sec center">
+  <div class="in" style="max-width:760px">
+    <p class="eyebrow">Histórias de quem <b>decidiu se escolher</b></p>
+    <h2 class="h2">Quando o treino faz sentido, ele passa a fazer parte da vida.</h2>
+    <div class="rating">
+      <strong>[0,0]</strong>
+      <div style="text-align:left"><div class="stars"><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg></div><small>[Nº] avaliações no Google</small></div>
+    </div>
+  </div>
+  <div class="quotes">
+    <figure class="quote" style="margin:0">
+      <div class="qh"><span class="qm">“</span><span class="stars"><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg></span></div>
+      <p>“[Depoimento real de um aluno, em uma ou duas frases.]”</p>
+      <strong>[Nome do aluno]</strong><small>Avaliação no Google</small>
+    </figure>
+    <figure class="quote" style="margin:0">
+      <div class="qh"><span class="qm">“</span><span class="stars"><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg></span></div>
+      <p>“[Depoimento real de um aluno, em uma ou duas frases.]”</p>
+      <strong>[Nome do aluno]</strong><small>Avaliação no Google</small>
+    </figure>
+    <figure class="quote" style="margin:0">
+      <div class="qh"><span class="qm">“</span><span class="stars"><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg><svg class="i star"><use href="#i-star"/></svg></span></div>
+      <p>“[Depoimento real de um aluno, em uma ou duas frases.]”</p>
+      <strong>[Nome do aluno]</strong><small>Avaliação no Google</small>
+    </figure>
+  </div>
+  <a class="btn-outline" href="[LINK DAS AVALIAÇÕES NO GOOGLE]" target="_blank" rel="noopener">Ver avaliações no Google <svg class="i"><use href="#i-upright"/></svg></a>
+</section>
+
+<!-- ===== 10. FAQ + CONVERSAR ===== -->
+<section class="sec dark center">
+  <div class="in" style="max-width:990px">
+    <p class="eyebrow"><b>Dúvidas mais comuns</b></p>
+    <h2 class="h2" style="max-width:860px;margin:0 auto">Antes de começar, talvez você queira saber…</h2>
+    <div class="faq">
+      <details><summary><span class="n">01</span><span class="q">Qual acompanhamento é o mais indicado para mim?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">Depende da sua rotina, do seu objetivo e do quanto de apoio você quer ter. Na conversa inicial eu ajudo você a escolher entre a consultoria online e o personal presencial.</p></details>
+      <details><summary><span class="n">02</span><span class="q">Tenho menos de [IDADE] anos. Você também atende pessoas mais jovens?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">[Ajuste esta resposta ao seu público-alvo.]</p></details>
+      <details><summary><span class="n">03</span><span class="q">Estou há muito tempo sem treinar. Ainda posso começar?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">Pode, sim. O treino começa no ponto em que você está hoje, com progressão gradual e segura.</p></details>
+      <details><summary><span class="n">04</span><span class="q">Já passei dos 60 anos. A musculação ainda pode fazer diferença na minha vida?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">O treino de força é indicado em qualquer idade, sempre respeitando as suas condições e, quando necessário, a orientação do seu médico.</p></details>
+      <details><summary><span class="n">05</span><span class="q">Como você sabe qual é o treino certo para mim?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">Começo com uma conversa e uma avaliação: sua rotina, seu histórico, seus objetivos e suas limitações. A partir disso monto o planejamento.</p></details>
+      <details><summary><span class="n">06</span><span class="q">Na consultoria online, vou ter acompanhamento de verdade?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">Sim. Você recebe o treino no aplicativo, tem contato pelo WhatsApp e passa por revisões periódicas do plano. [Detalhe aqui a frequência dos retornos.]</p></details>
+      <details><summary><span class="n">07</span><span class="q">E se minha rotina, meus objetivos ou minhas necessidades mudarem?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">O plano muda junto. Sempre que algo importante mudar na sua vida, ajustamos o treino para continuar fazendo sentido.</p></details>
+      <details><summary><span class="n">08</span><span class="q">Como funciona a evolução do meu treinamento?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">Acompanho a progressão das suas cargas e da sua execução e reviso o planejamento em ciclos, aumentando o desafio de forma gradual.</p></details>
+      <details><summary><span class="n">09</span><span class="q">Preciso treinar em academia?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">[Explique onde acontecem os treinos presenciais e quais alternativas existem para treinar em casa ou em outro local.]</p></details>
+      <details><summary><span class="n">10</span><span class="q">Como você acompanha meus resultados?</span><svg class="i pl"><use href="#i-plus"/></svg></summary><p class="ans">Por meio de avaliações físicas periódicas, registro das cargas e conversas de ajuste ao longo do acompanhamento.</p></details>
+    </div>
+    <div class="talk">
+      <p class="eyebrow">Ainda ficou com alguma dúvida?</p>
+      <h2 class="h2">Vamos <em>conversar.</em></h2>
+      <p>Conte um pouco sobre você e eu ajudo a entender qual acompanhamento faz mais sentido para o seu momento.</p>
+      <a class="btn" data-wa href="#"><svg class="i"><use href="#i-wa"/></svg>Falar com [SEU NOME] no WhatsApp <svg class="i"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 11. COMUNIDADE ===== -->
+<section class="sec center">
+  <div class="in" style="max-width:760px">
+    <p class="eyebrow"><b>[SUA COMUNIDADE]</b></p>
+    <h2 class="h2">Continuar fica mais fácil <em>em boa companhia.</em></h2>
+    <p class="lead">Na [SUA COMUNIDADE], alunos do online e do presencial encontram conteúdo, direção e pessoas com o mesmo compromisso.</p>
+  </div>
+  <div class="comm">
+    <div class="bg photo"></div>
+    <div class="bubble"><svg class="i"><use href="#i-book"/></svg></div>
+    <p class="k">Conteúdo, direção e pertencimento</p>
+    <h3>Um espaço para ajudar você a continuar.</h3>
+    <p class="d">A comunidade aproxima pessoas que escolheram cuidar do corpo e do futuro, com informação prática e incentivo para transformar o treino em parte da vida.</p>
+    <div class="cols">
+      <div class="col"><span>01</span><h4>Constância no dia a dia</h4><p>Conteúdos que conectam treino, saúde e a vida que você quer preservar.</p></div>
+      <div class="col"><span>02</span><h4>Confiança em cada movimento</h4><p>Informação prática para entender o que faz e treinar com segurança.</p></div>
+      <div class="col"><span>03</span><h4>Gente que incentiva</h4><p>Pertencimento e incentivo para manter a constância, inclusive nos dias difíceis.</p></div>
+    </div>
+    <div class="bar"><svg class="i"><use href="#i-usercheck"/></svg>Comunidade exclusiva para alunos</div>
+  </div>
+</section>
+
+<!-- ===== 12. CTA FINAL ===== -->
+<section class="sec dark" style="padding-top:90px;padding-bottom:90px">
+  <div class="final">
+    <div>
+      <p class="eyebrow">Pronto para começar?</p>
+      <h2>Encontre o acompanhamento certo para você.</h2>
+      <p>Conte seu objetivo e descubra a melhor opção para o seu momento.</p>
+    </div>
+    <a class="btn" data-wa href="#"><svg class="i"><use href="#i-wa"/></svg>Quero começar</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div><b>[SEU NOME] Personal Trainer</b>CREF [000000-G/UF]</div>
+    <div class="links"><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a></div>
+    <div class="r"><a href="https://instagram.com/[seu_instagram]" target="_blank" rel="noopener"><svg class="i"><use href="#i-insta"/></svg>@[seu_instagram]</a><br><span id="ano"></span> © Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

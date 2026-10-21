@@ -1,0 +1,1 @@
+Coloque aqui as fotos (.webp ou .jpg). Depois, no index.html, use style="--img:url(img/nome-da-foto.webp)" no bloco da foto.
