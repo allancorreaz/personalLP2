@@ -4,7 +4,7 @@ Landing page completa para personal trainers, feita em **HTML, CSS e JavaScript 
 
 Foi pensada como **modelo de venda**: o cliente troca textos, fotos, cores e o número do WhatsApp, e o site está no ar.
 
-**Demonstração:** ´(https://personal-red-kappa.vercel.app/)´
+**Demonstração:** https://personal-red-kappa.vercel.app/
 
 > Existe também a [Versão 1](https://github.com/allancorreaz/personalLP), mais enxuta, em outro repositório.
 
